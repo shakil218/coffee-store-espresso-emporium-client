@@ -9,7 +9,7 @@ const Navbar = () => {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <img src={logo} alt="" className="w-[75px] h[90px]" />
-      <p className="font-rancho text-6xl text-white">Espresso Emporium</p>
+      <p className="font-rancho text-3xl md:text-4xl lg:text-6xl text-white">Espresso Emporium</p>
     </div>
   );
 };

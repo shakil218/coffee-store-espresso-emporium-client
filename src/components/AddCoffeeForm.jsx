@@ -47,14 +47,14 @@ const AddCoffeeForm = () => {
           size={24}
           className="text-[#331A15]"
         ></IoIosArrowRoundBack>
-        <p className="font-rancho text-3xl text-[#374151]">Back to home</p>
+        <p className="font-rancho text-2xl md:text-3xl text-[#374151]">Back to home</p>
       </Link>
       <div className=" bg-[#F4F3F0]">
         <div className="flex flex-col justify-center items-center text-center w-8/12 mx-auto">
-          <h3 className="font-rancho text-5xl text-[#374151] mt-10">
+          <h3 className="font-rancho text-3xl md:text-4xl lg:text-5xl text-[#374151] mt-10">
             Add New Coffee
           </h3>
-          <p className="text-lg my-5">
+          <p className="md:text-lg my-5">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
@@ -65,7 +65,7 @@ const AddCoffeeForm = () => {
           onSubmit={handleAddCoffee}
           className="flex flex-col gap-3 w-10/12 mx-auto"
         >
-          <div className="flex gap-3">
+          <div className="flex flex-col lg:flex-row gap-3">
             <div className="w-full">
               <legend className="fieldset-legend">Name</legend>
               <input
@@ -85,7 +85,7 @@ const AddCoffeeForm = () => {
               />
             </div>
           </div>
-          <div className="flex gap-3">
+          <div className="flex flex-col lg:flex-row gap-3">
             <div className="w-full">
               <legend className="fieldset-legend">Supplier</legend>
               <input
@@ -105,7 +105,7 @@ const AddCoffeeForm = () => {
               />
             </div>
           </div>
-          <div className="flex gap-3">
+          <div className="flex flex-col lg:flex-row gap-3">
             <div className="w-full">
               <legend className="fieldset-legend">Category</legend>
               <input
@@ -125,7 +125,7 @@ const AddCoffeeForm = () => {
               />
             </div>
           </div>
-          <div className="flex gap-3">
+          <div className="flex flex-col lg:flex-row gap-3">
             <div className="w-full">
               <legend className="fieldset-legend">Price</legend>
               <input
@@ -149,7 +149,7 @@ const AddCoffeeForm = () => {
           <input
             type="submit"
             value="Add Coffee"
-            className="font-rancho text-2xl text-[#331A15] bg-[#D2B48C] border border-[#331A15] w-full h-14 mt-3 mb-10"
+            className="font-rancho text-xl md:text-2xl text-[#331A15] bg-[#D2B48C] border border-[#331A15] w-full h-14 mt-3 mb-10"
           />
         </form>
       </div>

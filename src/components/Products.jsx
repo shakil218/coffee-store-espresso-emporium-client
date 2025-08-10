@@ -15,10 +15,10 @@ const Products = () => {
         style={{ backgroundImage: `url(${BgImage})` }}
       >
         {/* Main Content */}
-        <div className="z-10 w-9/12">
+        <div className="z-10 md:w-9/12">
           <div className="flex flex-col justify-center items-center mb-8 ">
             <p>--- Sip & Savor ---</p>
-            <h3 className="font-rancho text-6xl text-[#331A15] my-2 ">
+            <h3 className="font-rancho text-4xl md:text-6xl text-[#331A15] my-2 ">
               Our Popular Products
             </h3>
             <Link to={"/add-coffee"}>
@@ -29,7 +29,7 @@ const Products = () => {
           </div>
           {/* Your product grid here */}
           {/* <CoffeeCards></CoffeeCards> */}
-          <div className="grid md:grid-cols-2 gap-3 ">
+          <div className="grid lg:grid-cols-2 gap-3 ">
             {coffees.map((coffee) => (
               <CoffeeCards
                 key={coffee._id}

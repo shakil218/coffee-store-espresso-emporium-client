@@ -12,11 +12,11 @@ const CoffeeDetailsCard = () => {
           size={24}
           className="text-[#331A15]"
         ></IoIosArrowRoundBack>
-        <p className="font-rancho text-3xl text-[#374151]">Back to home</p>
+        <p className="font-rancho text-xl md:text-3xl text-[#374151]">Back to home</p>
       </Link>
       <div className="bg-[#F4F3F0] w-full mx-auto m-10 p-10">
-        <div className="card flex flex-row items-center w-11/12 mx-auto">
-          <figure className="w-6/12">
+        <div className="card flex flex-col lg:flex-row items-center w-11/12 mx-auto">
+          <figure className="md:w-6/12">
             <img
               src={coffee.photo}
               alt={coffee.name}
@@ -24,7 +24,7 @@ const CoffeeDetailsCard = () => {
             />
           </figure>
           <div className="card-body ">
-            <h2 className="card-title font-rancho text-4xl text-[#374151]">Niceties</h2>
+            <h2 className="card-title font-rancho text-2xl md:text-3xl lg:text-4xl text-[#374151]">Niceties</h2>
             <div>
               <p><span className="font-semibold">Name:  </span>{coffee.name}</p>
               <p><span className="font-semibold">Chef:  </span>{coffee.chef}</p>

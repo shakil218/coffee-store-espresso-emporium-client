@@ -17,12 +17,12 @@ const Footer = () => {
       >
         <div className="w-9/12 mx-auto my-14">
           <img src={Logo} alt="" className="w-[75px] h[90px]" />
-          <div className="flex justify-between ">
+          <div className="flex flex-col-reverse md:flex-row justify-between gap-5">
             <div>
-              <p className="font-rancho text-5xl text-[#331A15] my-3">
+              <p className="font-rancho text-3xl md:text-5xl text-[#331A15] my-3">
                 Espresso Emporium
               </p>
-              <p className="text-xl text-[#1B1A1A]">
+              <p className="lg:text-xl text-[#1B1A1A]">
                 Always ready to be your friend. Come & Contact with us to share
                 your memorable moments, to share with your best companion.
               </p>
@@ -32,7 +32,7 @@ const Footer = () => {
                 <FaInstagram size={30}></FaInstagram>
                 <FaLinkedin size={30}></FaLinkedin>
               </div>
-              <p className="font-rancho text-4xl text-[#331A15]">
+              <p className="font-rancho text-2xl md:text-4xl text-[#331A15]">
                 Get in Touch
               </p>
               <div className="flex flex-col gap-2 my-3">
@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
             </div>
             <form>
-              <p className="font-rancho text-5xl text-[#331A15] my-3">
+              <p className="font-rancho text-3xl md:text-5xl text-[#331A15] my-3">
                 Connect with Us
               </p>
               <fieldset className="flex flex-col gap-3 w-80">

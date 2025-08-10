@@ -38,8 +38,8 @@ const CoffeeCards = ({ coffee, coffees, setCoffees }) => {
 
   return (
     <div className="bg-[#F4F3F0]">
-      <div className="card flex flex-row justify-around items-center w-10/12 mx-auto my-3">
-        <figure className="w-5/12">
+      <div className="card flex flex-row justify-around items-center lg:w-10/12 mx-3 lg:mx-auto my-3">
+        <figure className="lg:w-5/12">
           <img
             src={coffee.photo}
             alt={coffee.name}
@@ -47,7 +47,7 @@ const CoffeeCards = ({ coffee, coffees, setCoffees }) => {
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title font-rancho text-4xl text-[#374151]">
+          <h2 className="card-title font-rancho text-2xl md:text-3xl lg:text-4xl text-[#374151]">
             Niceties
           </h2>
           <div>

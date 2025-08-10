@@ -4,12 +4,12 @@ import bannerImg from "../assets/images/more/3.png";
 const Banner = () => {
   return (
     <div
-      className="bg-cover bg-center h-screen flex justify-end items-center"
+      className="bg-cover bg-center min-h-screen flex md:justify-end justify-center items-center text-center md:text-left"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
       <div className="w-1/2">
-        <div className="w-11/12">
-          <h3 className="font-rancho text-5xl text-white">
+        <div className="w-11/12 my-5">
+          <h3 className="font-rancho text-3xl md:text-4xl lg:text-5xl text-white">
             Would you like a Cup of Delicious Coffee?
           </h3>
           <p className="text-white my-5">
