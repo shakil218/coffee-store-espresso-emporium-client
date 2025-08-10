@@ -10,12 +10,12 @@ import CupEight from '../assets/images/cups/Rectangle 16.png'
 
 const Social = () => {
   return (
-    <div className='z-10 w-full max-w-5xl  mx-auto'>
+    <div className='z-10 w-9/12  mx-auto'>
       <div className='flex flex-col justify-center items-center my-12'>
         <p>Follow Us Now</p>
         <h3 className="font-rancho text-6xl mt-2 text-[#331A15]">Follow on Instagram</h3>
       </div>
-      <div className='grid md:grid-cols-4 mb-20'>
+      <div className='grid md:grid-cols-4 mb-20 gap-3'>
         <img src={CupOne} alt="" />
         <img src={CupTwo} alt="" />
         <img src={CupThree} alt="" />

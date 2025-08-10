@@ -6,8 +6,8 @@ import ProperRoasting from "../assets/images/icons/4.png";
 
 const Categories = () => {
   return (
-    <div className="flex justify-center items-center bg-[#ECEAE3] h-[300px]">
-      <div className="flex w-8/12 m-auto justify-center items-center gap-2">
+    <div className="flex justify-center items-center bg-[#ECEAE3] py-10">
+      <div className="flex w-9/12 mx-auto justify-center items-center gap-2">
         <div>
           <img src={AwesomeAroma} alt="" />
           <h4 className="font-rancho text-4xl my-3">Awesome Aroma</h4>

@@ -15,7 +15,7 @@ const Footer = () => {
         className="footer sm:footer-horizontal bg-base-200 text-base-content"
         style={{ backgroundImage: `url(${BgImg})` }}
       >
-        <div className="w-8/12 mx-auto my-14">
+        <div className="w-9/12 mx-auto my-14">
           <img src={Logo} alt="" className="w-[75px] h[90px]" />
           <div className="flex justify-between ">
             <div>
