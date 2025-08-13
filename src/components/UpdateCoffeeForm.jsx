@@ -41,7 +41,7 @@ const UpdateCoffeeForm = () => {
         console.log(data);
         if (data.modifiedCount > 0) {
           Swal.fire({
-            title: "Good job!",
+            title: "Congratulations!",
             text: "Coffee update successfully.",
             icon: "success",
             confirmButtonText: "Ok",

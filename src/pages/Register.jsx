@@ -30,9 +30,9 @@ const Register = () => {
         })
           .then((res) => res.json())
           .then((data) => {
-            if (data.modifiedCount > 0) {
+            if (data.insertedId) {
               Swal.fire({
-                title: "Good job!",
+                title: "Congratulations!",
                 text: "User sign up successfully.",
                 icon: "success",
                 confirmButtonText: "Ok",

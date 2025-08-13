@@ -30,7 +30,7 @@ const AddCoffeeForm = () => {
         console.log(data);
         if (data.insertedId) {
           Swal.fire({
-            title: "Good job!",
+            title: "Congratulations!",
             text: "Coffee added successfully.",
             icon: "success",
             confirmButtonText: "Ok",

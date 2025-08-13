@@ -31,7 +31,7 @@ const Login = () => {
           .then((data) => {
             if (data.modifiedCount > 0) {
               Swal.fire({
-                title: "Good job!",
+                title: "Congratulations!",
                 text: "User sign in successfully.",
                 icon: "success",
                 confirmButtonText: "Ok",
