@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import Swal from "sweetalert2";
 
 const Login = () => {
   const { signInUser } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleSignInUser = (event) => {
     event.preventDefault();
@@ -37,6 +38,7 @@ const Login = () => {
                 confirmButtonText: "Ok",
               });
               form.reset();
+              navigate('/')
             }
           });
       })

@@ -2,11 +2,12 @@ import React, { useContext } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { AuthContext } from "../provider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
+  const navigate = useNavigate();
   const handleRegister = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -30,6 +31,7 @@ const Register = () => {
         })
           .then((res) => res.json())
           .then((data) => {
+            console.log(data);
             if (data.insertedId) {
               Swal.fire({
                 title: "Congratulations!",
@@ -38,6 +40,7 @@ const Register = () => {
                 confirmButtonText: "Ok",
               });
               form.reset();
+              navigate('/')
             }
           });
       })
