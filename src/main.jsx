@@ -7,37 +7,56 @@ import AddCoffee from "./pages/AddCoffee";
 import UpdateCoffee from "./pages/UpdateCoffee";
 import CoffeeDetails from "./pages/CoffeeDetails";
 import ErrorPage from "./pages/ErrorPage";
+import AuthProvider from "./provider/AuthProvider";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import Users from "./pages/Users";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
+    errorElement: <ErrorPage></ErrorPage>,
     loader: () => fetch("http://localhost:5000/coffee"),
-    children: [
-      {
-        path: "/error",
-        element: <ErrorPage></ErrorPage>,
-      },
-    ],
   },
   {
     path: "/add-coffee",
     element: <AddCoffee></AddCoffee>,
+    errorElement: <ErrorPage></ErrorPage>,
   },
   {
     path: "/update-coffee/:id",
     element: <UpdateCoffee></UpdateCoffee>,
+    errorElement: <ErrorPage></ErrorPage>,
     loader: ({ params }) => fetch(`http://localhost:5000/coffee/${params.id}`),
   },
   {
     path: "/details/:id",
     element: <CoffeeDetails></CoffeeDetails>,
-    loader:({params}) => fetch(`http://localhost:5000/coffee/${params.id}`)
+    errorElement: <ErrorPage></ErrorPage>,
+    loader: ({ params }) => fetch(`http://localhost:5000/coffee/${params.id}`),
+  },
+  {
+    path: "/users",
+    element: <Users></Users>,
+    errorElement: <ErrorPage></ErrorPage>,
+    loader: () => fetch('http://localhost:5000/users'),
+  },
+  {
+    path:'/register',
+    element:<Register></Register>
+  },
+  {
+    path:'/login',
+    element:<Login></Login>
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <AuthProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </AuthProvider>
   </StrictMode>
 );

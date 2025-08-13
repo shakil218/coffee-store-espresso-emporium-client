@@ -22,7 +22,7 @@ const Footer = () => {
               <p className="font-rancho text-3xl md:text-5xl text-[#331A15] my-3">
                 Espresso Emporium
               </p>
-              <p className="lg:text-xl text-[#1B1A1A]">
+              <p className="text-sm lg:text-xl text-[#1B1A1A]">
                 Always ready to be your friend. Come & Contact with us to share
                 your memorable moments, to share with your best companion.
               </p>
